@@ -14,10 +14,11 @@ function Operator(Value) {
     Array.push(operator);
 }
 function Result() {
-     var result = 0;
+    var result="";
     for(var i = 0;i<Array.length;i++)
     {
         result+=Array[i];
+        console.log(result);
     }
     result = eval(result);
     document.getElementById("result").value=result;
